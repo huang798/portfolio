@@ -1,0 +1,178 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		title Li-Ning Huang's Portfolio
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+		link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.2/css/all.css', integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr', crossorigin='anonymous')
+		link(href='../node_modules/lightbox2/dist/css/lightbox.css', rel='stylesheet')
+		link(rel='stylesheet', href='css/style.css')
+
+	body
+		nav.navbar.navbar-default.navbar-fixed-top.navbar-top
+			.container
+				.navbar-header
+					a(href="#section_title").navbar-brand LN
+				.navbar-collapse.collapse
+					.nav.navbar-nav.navbar-right
+						li
+							a(href="#section_about") 關於我
+						li
+							a(href="#section_skill") 技能
+						li
+							a(href="#section_works") 作品集
+						li
+							a(href="#contact_me") 聯絡我
+
+		//- LightBox Testing
+		//- h3 A Four Image Set
+		//- div
+		//- 	a.example-image-link(href='http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg', data-lightbox='example-set', data-title='Click the right half of the image to move forward.')
+		//- 		img.example-image(src='http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg', alt='')
+		//- 	a.example-image-link(href='http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg', data-lightbox='example-set', data-title='Or press the right arrow on your keyboard.')
+		//- 		img.example-image(src='http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg', alt='')
+		//- 	a.example-image-link(href='http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg', data-lightbox='example-set', data-title="The next image in the set is preloaded as you're viewing.")
+		//- 		img.example-image(src='http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg', alt='')
+		//- 	a.example-image-link(href='http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg', data-lightbox='example-set', data-title='Click anywhere outside the image or the X to the right to close.')
+		//- 		img.example-image(src='http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg', alt='')
+
+		header.jumbotron#section_title
+			.container
+				h1(data-0="transform: translateY(-50px)" data-500="transform: translateY(100px)") Li-Ning Huang
+				hr
+				h4 平面設計 | UI/UX設計 | 網頁前端開發
+				i.fab.fa-linkedin-in#linkedin
+					a(href="www.linkedin.com/in/LiNingHuang-51991b16b")
+				i.fab.fa-github#github
+					a(href="https://github.com/huang798")
+
+				//-RESUME Link Need to be updated-//
+				i.fas.fa-link#resume_link
+					a(href="")
+					#resume_text Resume
+					
+				//- Graphic Design | UIUX Design | Front-End Development
+				
+		section#section_about
+			.container
+				.rol
+					.col-sm-5.img(data-0="transform: translateX(-200px)" data-500="transform: translateX(0px)")
+					.col-sm-6.col-sm-offset-1(data-0="opacity: 0" data-300="opacity: 0" data-500="opacity: 1")
+						h1 關於我
+						br
+						p 畢業於台灣高中，隨後進入美國普渡大學電腦圖像工程系就讀。在校期間涉獵
+							span  平面設計
+							| 、
+							span UI/UX設計
+							| 、
+							span 網頁前後端開發
+							| 、
+							span 大數據分析 
+							| 等等面向，其中對於設計領域和網站開發有著熱枕。
+						p 大二時在校內報社The Exponent和TEDxPurdueU擔任平面設計師，大四時則擔當大學內的教育學系的平面設計實習生，幫忙製作宣傳海報、設計相關部門的LOGO等等。
+						br
+						p 雖然較晚踏入網頁開發的領域，但透過部分學校課程和線上課程的眾多資源，學習了前端開發的各種工具，包括基本的HTML、CSS、JavaScript，和好用的JQuery、Bootstrap、Git/GitHub等等。
+						br
+						p 現在的目標是以
+							span 網頁前端工程師
+							| 的身分加入網頁架設團隊，與其他人一同打造美觀而友善使用者的網站！
+						
+		section#section_skill
+			.container
+				.rol
+					.col-sm-12
+						h1 技能
+						hr
+					.col-md-4.col-sm-6
+						i.fas.fa-laptop-code
+						h3 網頁前端
+						p 簡述
+						li HTML/CSS/JavaScript
+						li Javascript/Jquery
+						li Responsive Design
+						li Gulp自動化流程
+						li Git/GitHub 團隊協作
+						li 習慣使用Pug(Jade)、SASS等模板引擎
+						li#second_line 信奉 Human Interface Guideline、Pixel Perfect Precision Handbook
+					.col-md-4.col-sm-6
+						i.fab.fa-adobe
+						h3 平面設計
+						p 簡述
+						li HTML/CSS/JavaScript
+						li Javascript/Jquery
+						li Responsive Design
+						li Gulp自動化流程
+						li Git/GitHub 團隊協作
+						li 習慣使用Pug(Jade)、SASS等模板引擎
+					.col-md-4.col-sm-6
+						i.fas.fa-cubes
+						h3 其他項目
+						p 簡述
+						li 掌握部分後端，能與後端工程師溝通
+						li 英文佳，能與外國公司接洽
+						
+		section#section_works
+			.container
+				.rol
+					.col-sm-12
+						h1 作品集
+						hr
+				.works_box_wrapin#toppest_wrap
+					.col-sm-4.col-sm-offset-1.works_box
+						a(href="https://ithelp.ithome.com.tw/articles/10191600")
+							img(src="https://cdn-images-1.medium.com/max/2000/1*7aJPlxn8gwhI7JjcBFr-tQ.jpeg", alt="")
+							.texts
+								h4.title Title Here
+								p.content Content Here
+					.col-sm-4.col-sm-offset-2.works_box
+						a(href="https://ithelp.ithome.com.tw/articles/10191600")
+							img(src="https://cdn-images-1.medium.com/max/2000/1*7aJPlxn8gwhI7JjcBFr-tQ.jpeg", alt="")
+							.texts
+								h4.title Title Here
+								p.content Content Here
+					.container_tag#frontend_tag
+						p 網頁前端
+
+				.works_box_wrapin
+					.col-sm-4.col-sm-offset-1.works_box
+						a(href="https://ithelp.ithome.com.tw/articles/10191600")
+							img(src="https://cdn-images-1.medium.com/max/2000/1*7aJPlxn8gwhI7JjcBFr-tQ.jpeg", alt="")
+							.texts
+								h4.title Title Here
+								p.content Content Here
+					.col-sm-4.col-sm-offset-2.works_box
+						a(href="https://ithelp.ithome.com.tw/articles/10191600")
+							img(src="https://cdn-images-1.medium.com/max/2000/1*7aJPlxn8gwhI7JjcBFr-tQ.jpeg", alt="")
+							.texts
+								h4.title Title Here
+								p.content Content Here
+					.container_tag#design_tag
+						p 平面設計/攝影
+
+							
+		footer.jumbotron#contact_me
+			.container
+				h2 與我聯繫？
+				input.form-control(placeholder="Email")
+				hr
+				button.btn.btn-defaule 寄出
+
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js')
+		script(src='js/all.js')
+		script(src='../node_modules/lightbox2/dist/js/lightbox.js')
+		script.
+			//點擊後滑動到特定頁面
+			$(document).on('click', 'a',function(event){
+			//取消原本預定的動作
+			event.preventDefault();
+			//抓取被點擊的按鈕所連的連結
+			var target = $(this).attr("href");
+			//抓取連結所連到的地方與上方的距離，在5000毫秒內動畫滑至下方
+			$('html, body').animate({
+				scrollTop: $(target).offset().top},300);
+			});
+
