@@ -90,27 +90,27 @@ gulp.task('sass', function () {
 
 
 //將ES6編輯的檔案轉譯成一般JS然後存取到Public中的JS資料夾裡
-gulp.task('babel', () => {
-    gulp.src('./source/js/**/*.js')
-        .pipe($.sourcemaps.init())
-        .pipe($.babel({
-            presets: ['@babel/env']
-        }))
+// gulp.task('babel', () => {
+//     gulp.src('./source/js/**/*.js')
+//         .pipe($.sourcemaps.init())
+//         .pipe($.babel({
+//             presets: ['@babel/env']
+//         }))
 
-        //Concat可以把多個檔案合併成一個，減少Request
-        .pipe($.concat('all.js'))
+//         //Concat可以把多個檔案合併成一個，減少Request
+//         .pipe($.concat('all.js'))
 
-        //uglify把JS檔案壓縮，縮小空間
-        //compress把測試用的console刪掉
-        .pipe($.if(options.env === 'production', $.uglify({
-          compress: {
-            drop_console: true
-          }
-        })))
-        .pipe($.sourcemaps.write('.'))
-        .pipe(gulp.dest('./public/js'))
-        .pipe(browserSync.stream());
-});
+//         //uglify把JS檔案壓縮，縮小空間
+//         //compress把測試用的console刪掉
+//         .pipe($.if(options.env === 'production', $.uglify({
+//           compress: {
+//             drop_console: true
+//           }
+//         })))
+//         .pipe($.sourcemaps.write('.'))
+//         .pipe(gulp.dest('./public/js'))
+//         .pipe(browserSync.stream());
+// });
 
 
 //將Bower的資料載入到Tmp資料夾裡
@@ -178,7 +178,8 @@ gulp.task('deploy', function(){
 
 
 //只要執行Gulp，就會將列入陣列的tasks都自動執行一遍
-gulp.task('default', ['pug', 'sass', 'babel', 'vendorJs', 'image-min', 'browser-sync', 'watch']);
+// gulp.task('default', ['pug', 'sass', 'babel', 'vendorJs', 'image-min', 'browser-sync', 'watch']);
+gulp.task('default', ['pug', 'sass', 'vendorJs', 'image-min', 'browser-sync', 'watch']);
 
 
 //發布前跑一次，他就會把public、tmp資料夾清空，並且重新跑一次內容
