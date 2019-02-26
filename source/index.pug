@@ -4,10 +4,9 @@ html(lang='en')
 		meta(charset='UTF-8')
 		title Li-Ning Huang's Portfolio
 		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
-		//- link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous")
-		//- link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 		link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.2/css/all.css', integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr', crossorigin='anonymous')
 		link(rel='stylesheet', href='css/style.css')
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
 
 	body
 		nav.navbar.navbar-default.navbar-fixed-top.navbar-top
@@ -32,19 +31,16 @@ html(lang='en')
 				hr
 				h4 平面設計 | UI/UX設計 | 網頁前端開發
 
-				a(href="https://www.w3schools.com") Visit W3Schools
-
-				a(target="_blank", href="www.linkedin.com/in/LiNingHuang-51991b16b")
+				a(target="_blank", href="https://www.linkedin.com/in/LiNingHuang-51991b16b/")
 					i.fab.fa-linkedin-in#linkedin
 						
-				a(href="https://github.com/huang798")
+				a(target="_blank", href='https://github.com/huang798')
 					i.fab.fa-github#github
-					
 
-				//-RESUME Link Need to be updated-//
-				i.fas.fa-link#resume_link
-					a(href="#")
-					#resume_text Resume
+				#mouse_icon
+					#wheel
+				
+					
 					
 				//- Graphic Design | UIUX Design | Front-End Development
 				
@@ -71,6 +67,10 @@ html(lang='en')
 						p 現在的目標是以
 							span 網頁前端工程師
 							| 的身分加入網頁架設團隊，與其他人一同打造美觀而友善使用者的網站！
+
+						a(target="_blank", href="https://drive.google.com/file/d/1dE9iBiKvY1jzUZuEf26mhuA-4b1WRaVF/view?usp=sharing")
+							i.fas.fa-link#resume_link
+								#resume_text Resume
 						
 		section#section_skill
 			.container
@@ -114,47 +114,63 @@ html(lang='en')
 						hr
 				.works_box_wrapin#toppest_wrap
 					.col-sm-4.col-sm-offset-1.works_box
-						a(href="https://ithelp.ithome.com.tw/articles/10191600")
+						a(href="#")
 							img(src="https://cdn-images-1.medium.com/max/2000/1*7aJPlxn8gwhI7JjcBFr-tQ.jpeg", alt="")
 							.texts
-								h4.title Title Here
-								p.content Content Here
+								i.fas.fa-spinner.fa-spin
+								//- h4.title Title Here
+								p.content Updating
 					.col-sm-4.col-sm-offset-2.works_box
-						a(href="https://ithelp.ithome.com.tw/articles/10191600")
+						a(href="#")
 							img(src="https://cdn-images-1.medium.com/max/2000/1*7aJPlxn8gwhI7JjcBFr-tQ.jpeg", alt="")
 							.texts
-								h4.title Title Here
-								p.content Content Here
+								i.fas.fa-spinner.fa-spin
+								//- h4.title Title Here
+								p.content Updating
 					.container_tag#frontend_tag
 						p 網頁前端
 
 				.works_box_wrapin
 					.col-sm-4.col-sm-offset-1.works_box
-						a(href="https://ithelp.ithome.com.tw/articles/10191600")
+						a(href="#")
 							img(src="https://cdn-images-1.medium.com/max/2000/1*7aJPlxn8gwhI7JjcBFr-tQ.jpeg", alt="")
 							.texts
-								h4.title Title Here
-								p.content Content Here
+								i.fas.fa-spinner.fa-spin
+								//- h4.title Title Here
+								p.content Updating
 					.col-sm-4.col-sm-offset-2.works_box
-						a(href="https://ithelp.ithome.com.tw/articles/10191600")
+						a(href="#")
 							img(src="https://cdn-images-1.medium.com/max/2000/1*7aJPlxn8gwhI7JjcBFr-tQ.jpeg", alt="")
 							.texts
-								h4.title Title Here
-								p.content Content Here
+								i.fas.fa-spinner.fa-spin
+								//- h4.title Title Here
+								p.content Updating
 					.container_tag#design_tag
 						p 平面設計/攝影
 
 							
 		footer.jumbotron#contact_me
 			.container
-				h2 與我聯繫？
-				input.form-control(placeholder="Email")
+				h2 與我聯繫
+				form(action='https://formspree.io/huang798@purdue.edu', method='POST')
+					label 姓名：
+					input(type="text" name="name").form-control(placeholder)#name
+					br
+					label E-mail：
+					input(type="text" name="email").form-control#email
+					br
+					label 訊息：
+					br
+					input(type="textarea" name="message").form-control#textarea
 				hr
-				button.btn.btn-defaule 寄出
+				input(type='submit', value='Send')#send 寄出
 
-		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
-		//- script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js')
-		script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
+
+		
+		
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js')
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
 		script(src='js/all.js')
+		
 
