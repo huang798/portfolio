@@ -63,7 +63,7 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar-top
 	transform: translateY(-50%)
 	color: white
 	
-	@media screen and(max-width: 973px)
+	@media screen and(max-width: 1024px)
 		display: none
 
 #menu_center ul li a.active
@@ -148,7 +148,8 @@ header.jumbotron
 	#mouse_icon
 		position: absolute
 		left: 50%
-		bottom: 120px
+		bottom: 15%
+		// bottom: 50px
 		border: 2px solid #fff 
 		height: 40px
 		border-radius: 16px
@@ -160,6 +161,12 @@ header.jumbotron
 
 		@media screen and(max-width: 1024px)
 			display: none
+
+		@media screen and(min-width: 1366px)
+			bottom: 30%
+		@media screen and(min-width: 1640px)
+			bottom: 45%
+
 
 	#wheel
 		position: relative
