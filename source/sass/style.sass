@@ -19,9 +19,9 @@ $p_font_size: 16px
 	height: $h
 
 // debug用--------------------
-// header, section
+// header, section, footer
 // 	display: none
-// footer
+// #section_skill
 // 	display: block
 // *
 // 	border: solid 1px black !important
@@ -54,6 +54,35 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar-top
 		transition-duration: 0.5s
 		&:hover
 			color: $color_orange
+
+//SideBar
+.menu
+	position: fixed
+	top: 50%
+	z-index: 999
+	transform: translateY(-50%)
+	color: white
+	
+	@media screen and(max-width: 973px)
+		display: none
+
+#menu_center ul li a.active
+	background-color: white
+
+#menu_center ul
+	padding: 50px
+
+#menu_center ul li a
+	display: block
+	border-radius: 100%
+	line-height: 8px
+	width: 10px
+	height: 10px
+	border: solid 2px white
+
+#menu_center ul li
+	list-style: none
+	margin: 15px 0px
 
 
 
@@ -239,22 +268,43 @@ section#section_skill
 		font-size: 120px
 		display: block
 		text-align: center
+
 	
 	li
 		list-style: none
 		line-height: $p_font_size * 1.8
 		&:before
-			content: "✓　"
+			content: "•　"
 			display: inline-block
 	
 	#second_line
 		line-height: $p_font_size * 1.5
+
+	.col-sm-6
+		h3
+			color: $color_orange
+			font-size: $p_font_size * 2
+		p 
+			text-align: center
+		li
+			padding-left: 80px
+
+
+	#other_skill
+		li
+			padding-left: 50px
+
+
+	.last
+		@media screen and(max-width: 767px)
+			margin-bottom: 80px
+
 	
 	
 	
 //Works Section----------------------: 
 section#section_works
-	background-color: $bg_white
+	background-color: #666
 
 	h1
 		text-align: center
@@ -395,6 +445,10 @@ footer.jumbotron
 		max-width: 700px
 		box-shadow: 0px 0px 20px rgba(black, 0.6)
 
+		@media screen and(max-width: 900px)
+			padding: 50px
+			max-width: 500px
+
 	#textarea
 		height: 150px
 
@@ -404,5 +458,8 @@ footer.jumbotron
 	#email
 		margin-bottom: 15px
 
-	#send
-		color: #666
+	button
+		color: black
+		border-radius: 6px
+		padding: 6px 10px
+		font-family: 微軟正黑體

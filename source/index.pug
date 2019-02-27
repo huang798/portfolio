@@ -24,6 +24,20 @@ html(lang='en')
 						li
 							a(href="#contact_me") 聯絡我
 
+		.ml.menu
+			#menu_center
+				ul
+					li
+						a#menu_title(href="#section_title") 
+					li
+						a#menu_about(href="#section_about")
+					li
+						a#menu_skill(href="#section_skill")
+					li
+						a#menu_works(href="#section_works")
+					li
+						a#menu_contact(href="#contact_me")
+
 
 		header.jumbotron#section_title
 			.container
@@ -60,9 +74,9 @@ html(lang='en')
 							| 、
 							span 大數據分析 
 							| 等等面向，其中對於設計領域和網站開發有著熱枕。
-						p 大二時在校內報社The Exponent和TEDxPurdueU擔任平面設計師，大四時則擔當大學內的教育學系的平面設計實習生，幫忙製作宣傳海報、設計相關部門的LOGO等等。
+						p 大二時在校內報社The Exponent和TEDxPurdueU擔任平面設計師，大四時則擔當大學內的教育學系的平面設計實習生，幫忙製作宣傳海報、設計相關部門的LOGO等等。大四的畢業製作與Purdue Conference合作，小組替他們製作了可在智慧型手機上操作的購票網站。
 						br
-						p 雖然較晚踏入網頁開發的領域，但透過部分學校課程和線上課程的眾多資源，學習了前端開發的各種工具，包括基本的HTML、CSS、JavaScript，和好用的JQuery、Bootstrap、Git/GitHub等等。
+						p 踏入網頁開發的領域後，透過部分學校課程和線上課程的眾多資源，自主學習了前端開發的各種工具，包括基本的HTML、CSS、JavaScript，和好用的JQuery、Bootstrap、Git/GitHub等等。
 						br
 						p 現在的目標是以
 							span 網頁前端工程師
@@ -81,30 +95,38 @@ html(lang='en')
 					.col-md-4.col-sm-6
 						i.fas.fa-laptop-code
 						h3 網頁前端
-						p 簡述
-						li HTML/CSS/JavaScript
-						li Javascript/Jquery
-						li Responsive Design
-						li Gulp自動化流程
-						li Git/GitHub 團隊協作
-						li 習慣使用Pug(Jade)、SASS等模板引擎
-						li#second_line 信奉 Human Interface Guideline、Pixel Perfect Precision Handbook
+						p 網頁前端是一門藝術<br>我特別喜歡糾結於畫面呈現上的美感<br>也喜歡用CSS、JQuery做一些小動畫
+						br
+						li(data-bottom-top='transform: translateY(50px)', data--50-bottom='transform: translateY(0px)') HTML/CSS/JavaScript
+						li(data-bottom-top='transform: translateY(60px)', data--50-bottom='transform: translateY(0px)') Javascript/Jquery
+						li(data-bottom-top='transform: translateY(70px)', data--50-bottom='transform: translateY(0px)') Responsive Design
+						li(data-bottom-top='transform: translateY(80px)', data--50-bottom='transform: translateY(0px)') Gulp自動化流程
+						li(data-bottom-top='transform: translateY(90px)', data--50-bottom='transform: translateY(0px)') Git/GitHub 團隊協作
+						li(data-bottom-top='transform: translateY(100px)', data--50-bottom='transform: translateY(0px)') 習慣使用Pug(Jade)、SASS等模板引擎
+						li(data-bottom-top='transform: translateY(110px)', data--50-bottom='transform: translateX(0px)')#second_line.last 信奉 Human Interface Guideline、Pixel Perfect Precision Handbook
 					.col-md-4.col-sm-6
 						i.fab.fa-adobe
-						h3 平面設計
-						p 簡述
-						li HTML/CSS/JavaScript
-						li Javascript/Jquery
-						li Responsive Design
-						li Gulp自動化流程
-						li Git/GitHub 團隊協作
-						li 習慣使用Pug(Jade)、SASS等模板引擎
-					.col-md-4.col-sm-6
+						h3 設計領域
+						p 設計與網頁前端相輔相成<br>有好的平面設計/網頁版面規劃<br>可以給使用者更好的體驗
+						br
+						li(data-bottom-top='transform: translateY(50px)', data--50-bottom='transform: translateY(0px)') 平面設計、LOGO設計、UI/UX設計
+						li(data-bottom-top='transform: translateY(60px)', data--50-bottom='transform: translateY(0px)') 使用者研究法
+						li(data-bottom-top='transform: translateY(70px)', data--50-bottom='transform: translateY(0px)') 使用者中心設計
+						li(data-bottom-top='transform: translateY(80px)', data--50-bottom='transform: translateY(0px)') 原型設計與製作
+						li(data-bottom-top='transform: translateY(90px)', data--50-bottom='transform: translateY(0px)') 互動設計
+						li(data-bottom-top='transform: translateY(100px)', data--50-bottom='transform: translateY(0px)') 使用者測試
+						li(data-bottom-top='transform: translateY(110px)', data--50-bottom='transform: translateY(0px)').last Photoshop/Illustrator/Indesign
+					.col-md-4.col-sm-6#other_skill
 						i.fas.fa-cubes
 						h3 其他項目
-						p 簡述
-						li 掌握部分後端，能與後端工程師溝通
-						li 英文佳，能與外國公司接洽
+						p 排除網頁前端和平面設計外<br>有些其他的相關能力是會對專業產生影響的<br>例如網頁後端的知識、英文能力等
+						br
+						li(data-bottom-top='transform: translateY(50px)', data--50-bottom='transform: translateY(0px)') 掌握部分後端，能與後端工程師溝通
+						li(data-bottom-top='transform: translateY(60px)', data--50-bottom='transform: translateY(0px)') 具備英文能力，能與外國公司接洽
+						li(data-bottom-top='transform: translateY(70px)', data--50-bottom='transform: translateY(0px)') 有UX相關經驗，能理解使用者需求
+						li(data-bottom-top='transform: translateY(80px)', data--50-bottom='transform: translateY(0px)') 學習能力強，大部分前端、設計是自學而成
+						li(data-bottom-top='transform: translateY(90px)', data--50-bottom='transform: translateY(0px)') 具備問題解決能力，能夠自己尋找解決方法
+						li(data-bottom-top='transform: translateY(100px)', data--50-bottom='transform: translateY(0px)') 有實習經驗，清楚知道團隊該怎麼運作
 						
 		section#section_works
 			.container
@@ -162,8 +184,8 @@ html(lang='en')
 					label 訊息：
 					br
 					input(type="textarea" name="message").form-control#textarea
-				hr
-				input(type='submit', value='Send')#send 寄出
+					hr
+					button(type="submit") 寄出
 
 
 		
