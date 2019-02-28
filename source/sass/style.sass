@@ -26,13 +26,12 @@ $p_font_size: 16px
 // *
 // 	border: solid 1px black !important
 
-
 *
 	font-family: 微軟正黑體
 
 
 body
-	height: 1000px
+	overflow-x: hidden
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 	font-weight: bold
@@ -54,6 +53,7 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar-top
 		transition-duration: 0.5s
 		&:hover
 			color: $color_orange
+
 
 //SideBar
 .menu
@@ -333,7 +333,7 @@ section#section_works
 		background-color: $color_white
 		filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.5))
 
-		@media screen and(max-width: 700px)
+		@media screen and(max-width: 768px)
 			height: auto
 			padding-left: 3%
 			padding-right: 3%
@@ -367,8 +367,8 @@ section#section_works
 		padding: 5px
 		overflow: hidden
 		margin-bottom: 30px
-		@media screen and(max-width: 700px)
-			height: 400px
+		@media screen and(max-width: 768px)
+			height: 300px
 
 		//The cover of the links
 		&:before
@@ -399,8 +399,9 @@ section#section_works
 		height: 100%
 		border-radius: 8px
 		+ab_center
-		@media screen and(max-width: 700px)
+		@media screen and(max-width: 768px)
 			width: 110%
+			height: 110%
 	
 	hr
 		max-width: 50px

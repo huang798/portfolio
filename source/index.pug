@@ -2,6 +2,8 @@ doctype html
 html(lang='en')
 	head
 		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(name="keywords" content="網頁, 前端, 黃立寧, 設計, UI, tw, Li-Ning, Website, HTML, CSS, Javascript, JQuery")
 		title Li-Ning Huang's Portfolio
 		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
 		link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.2/css/all.css', integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr', crossorigin='anonymous')
@@ -38,154 +40,154 @@ html(lang='en')
 					li
 						a#menu_contact(href="#contact_me")
 
-
-		header.jumbotron#section_title
-			.container
-				h1(data-0="transform: translateY(-50px)" data-500="transform: translateY(100px)") Li-Ning Huang
-				hr
-				h4 平面設計 | UI/UX設計 | 網頁前端開發
-
-				a(target="_blank", href="https://www.linkedin.com/in/LiNingHuang-51991b16b/")
-					i.fab.fa-linkedin-in#linkedin
-						
-				a(target="_blank", href='https://github.com/huang798')
-					i.fab.fa-github#github
-
-				#mouse_icon
-					#wheel
-				
-					
-					
-				//- Graphic Design | UIUX Design | Front-End Development
-				
-		section#section_about
-			.container
-				.rol
-					.col-sm-5.img(data-0="transform: translateX(-200px)" data-500="transform: translateX(0px)")
-					.col-sm-6.col-sm-offset-1(data-0="opacity: 0" data-300="opacity: 0" data-500="opacity: 1")
-						h1 關於我
-						br
-						p 畢業於台灣高中，隨後進入美國普渡大學電腦圖像工程系就讀。在校期間涉獵
-							span  平面設計
-							| 、
-							span UI/UX設計
-							| 、
-							span 網頁前後端開發
-							| 、
-							span 大數據分析 
-							| 等等面向，其中對於設計領域和網站開發有著熱枕。
-						p 大二時在校內報社The Exponent和TEDxPurdueU擔任平面設計師，大四時則擔當大學內的教育學系的平面設計實習生，幫忙製作宣傳海報、設計相關部門的LOGO等等。大四的畢業製作與Purdue Conference合作，小組替他們製作了可在智慧型手機上操作的購票網站。
-						br
-						p 踏入網頁開發的領域後，透過部分學校課程和線上課程的眾多資源，自主學習了前端開發的各種工具，包括基本的HTML、CSS、JavaScript，和好用的JQuery、Bootstrap、Git/GitHub等等。
-						br
-						p 現在的目標是以
-							span 網頁前端工程師
-							| 的身分加入網頁架設團隊，與其他人一同打造美觀而友善使用者的網站！
-
-						a(target="_blank", href="https://drive.google.com/file/d/1dE9iBiKvY1jzUZuEf26mhuA-4b1WRaVF/view?usp=sharing")
-							i.fas.fa-link#resume_link
-								#resume_text Resume
-						
-		section#section_skill
-			.container
-				.rol
-					.col-sm-12
-						h1 技能
-						hr
-					.col-md-4.col-sm-6
-						i.fas.fa-laptop-code
-						h3 網頁前端
-						p 網頁前端是一門藝術<br>我特別喜歡糾結於畫面呈現上的美感<br>也喜歡用CSS、JQuery做一些小動畫
-						br
-						li(data-bottom-top='transform: translateY(50px)', data--50-bottom='transform: translateY(0px)') HTML/CSS/JavaScript
-						li(data-bottom-top='transform: translateY(60px)', data--50-bottom='transform: translateY(0px)') Javascript/Jquery
-						li(data-bottom-top='transform: translateY(70px)', data--50-bottom='transform: translateY(0px)') Responsive Design
-						li(data-bottom-top='transform: translateY(80px)', data--50-bottom='transform: translateY(0px)') Gulp自動化流程
-						li(data-bottom-top='transform: translateY(90px)', data--50-bottom='transform: translateY(0px)') Git/GitHub 團隊協作
-						li(data-bottom-top='transform: translateY(100px)', data--50-bottom='transform: translateY(0px)') 習慣使用Pug(Jade)、SASS等模板引擎
-						li(data-bottom-top='transform: translateY(110px)', data--50-bottom='transform: translateX(0px)')#second_line.last 信奉 Human Interface Guideline、Pixel Perfect Precision Handbook
-					.col-md-4.col-sm-6
-						i.fab.fa-adobe
-						h3 設計領域
-						p 設計與網頁前端相輔相成<br>有好的平面設計/網頁版面規劃<br>可以給使用者更好的體驗
-						br
-						li(data-bottom-top='transform: translateY(50px)', data--50-bottom='transform: translateY(0px)') 平面設計、LOGO設計、UI/UX設計
-						li(data-bottom-top='transform: translateY(60px)', data--50-bottom='transform: translateY(0px)') 使用者研究法
-						li(data-bottom-top='transform: translateY(70px)', data--50-bottom='transform: translateY(0px)') 使用者中心設計
-						li(data-bottom-top='transform: translateY(80px)', data--50-bottom='transform: translateY(0px)') 原型設計與製作
-						li(data-bottom-top='transform: translateY(90px)', data--50-bottom='transform: translateY(0px)') 互動設計
-						li(data-bottom-top='transform: translateY(100px)', data--50-bottom='transform: translateY(0px)') 使用者測試
-						li(data-bottom-top='transform: translateY(110px)', data--50-bottom='transform: translateY(0px)').last Photoshop/Illustrator/Indesign
-					.col-md-4.col-sm-6#other_skill
-						i.fas.fa-cubes
-						h3 其他項目
-						p 排除網頁前端和平面設計外<br>有些其他的相關能力是會對專業產生影響的<br>例如網頁後端的知識、英文能力等
-						br
-						li(data-bottom-top='transform: translateY(50px)', data--50-bottom='transform: translateY(0px)') 掌握部分後端，能與後端工程師溝通
-						li(data-bottom-top='transform: translateY(60px)', data--50-bottom='transform: translateY(0px)') 具備英文能力，能與外國公司接洽
-						li(data-bottom-top='transform: translateY(70px)', data--50-bottom='transform: translateY(0px)') 有UX相關經驗，能理解使用者需求
-						li(data-bottom-top='transform: translateY(80px)', data--50-bottom='transform: translateY(0px)') 學習能力強，大部分前端、設計是自學而成
-						li(data-bottom-top='transform: translateY(90px)', data--50-bottom='transform: translateY(0px)') 具備問題解決能力，能夠自己尋找解決方法
-						li(data-bottom-top='transform: translateY(100px)', data--50-bottom='transform: translateY(0px)') 有實習經驗，清楚知道團隊該怎麼運作
-						
-		section#section_works
-			.container
-				.rol
-					.col-sm-12
-						h1 作品集
-						hr
-				.works_box_wrapin#toppest_wrap
-					.col-sm-4.col-sm-offset-1.works_box
-						a(href="#")
-							img(src="https://cdn-images-1.medium.com/max/2000/1*7aJPlxn8gwhI7JjcBFr-tQ.jpeg", alt="")
-							.texts
-								i.fas.fa-spinner.fa-spin
-								//- h4.title Title Here
-								p.content Updating
-					.col-sm-4.col-sm-offset-2.works_box
-						a(href="#")
-							img(src="https://cdn-images-1.medium.com/max/2000/1*7aJPlxn8gwhI7JjcBFr-tQ.jpeg", alt="")
-							.texts
-								i.fas.fa-spinner.fa-spin
-								//- h4.title Title Here
-								p.content Updating
-					.container_tag#frontend_tag
-						p 網頁前端
-
-				.works_box_wrapin
-					.col-sm-4.col-sm-offset-1.works_box
-						a(href="#")
-							img(src="https://cdn-images-1.medium.com/max/2000/1*7aJPlxn8gwhI7JjcBFr-tQ.jpeg", alt="")
-							.texts
-								i.fas.fa-spinner.fa-spin
-								//- h4.title Title Here
-								p.content Updating
-					.col-sm-4.col-sm-offset-2.works_box
-						a(href="#")
-							img(src="https://cdn-images-1.medium.com/max/2000/1*7aJPlxn8gwhI7JjcBFr-tQ.jpeg", alt="")
-							.texts
-								i.fas.fa-spinner.fa-spin
-								//- h4.title Title Here
-								p.content Updating
-					.container_tag#design_tag
-						p 平面設計/攝影
-
-							
-		footer.jumbotron#contact_me
-			.container
-				h2 與我聯繫
-				form(action='https://formspree.io/huang798@purdue.edu', method='POST')
-					label 姓名：
-					input(type="text" name="name").form-control(placeholder)#name
-					br
-					label E-mail：
-					input(type="text" name="email").form-control#email
-					br
-					label 訊息：
-					br
-					input(type="textarea" name="message").form-control#textarea
+		#skrollr-body
+			header.jumbotron#section_title
+				.container
+					h1(data-0="transform: translateY(-50px)" data-500="transform: translateY(100px)") Li-Ning Huang
 					hr
-					button(type="submit") 寄出
+					h4 平面設計 | UI/UX設計 | 網頁前端開發
+
+					a(target="_blank", href="https://www.linkedin.com/in/LiNingHuang-51991b16b/")
+						i.fab.fa-linkedin-in#linkedin
+							
+					a(target="_blank", href='https://github.com/huang798')
+						i.fab.fa-github#github
+
+					#mouse_icon
+						#wheel
+					
+						
+						
+					//- Graphic Design | UIUX Design | Front-End Development
+					
+			section#section_about
+				.container
+					.rol
+						.col-sm-5.img(data-0="transform: translateX(-200px)" data-500="transform: translateX(0px)")
+						.col-sm-6.col-sm-offset-1(data-0="opacity: 0" data-300="opacity: 0" data-500="opacity: 1")
+							h1 關於我
+							br
+							p 畢業於台灣高中，隨後進入美國普渡大學電腦圖像工程系就讀。在校期間涉獵
+								span  平面設計
+								| 、
+								span UI/UX設計
+								| 、
+								span 網頁前後端開發
+								| 、
+								span 大數據分析 
+								| 等等面向，其中對於設計領域和網站開發有著熱枕。
+							p 大二時在校內報社The Exponent和TEDxPurdueU擔任平面設計師，大四時則擔當大學內的教育學系的平面設計實習生，幫忙製作宣傳海報、設計相關部門的LOGO等等。大四的畢業製作與Purdue Conference合作，小組替他們製作了可在智慧型手機上操作的購票網站。
+							br
+							p 踏入網頁開發的領域後，透過部分學校課程和線上課程的眾多資源，自主學習了前端開發的各種工具，包括基本的HTML、CSS、JavaScript，和好用的JQuery、Bootstrap、Git/GitHub等等。
+							br
+							p 現在的目標是以
+								span 網頁前端工程師
+								| 的身分加入網頁架設團隊，與其他人一同打造美觀而友善使用者的網站！
+
+							a(target="_blank", href="https://drive.google.com/file/d/1dE9iBiKvY1jzUZuEf26mhuA-4b1WRaVF/view?usp=sharing")
+								i.fas.fa-link#resume_link
+									#resume_text Resume
+							
+			section#section_skill
+				.container
+					.rol
+						.col-sm-12
+							h1 技能
+							hr
+						.col-md-4.col-sm-6
+							i.fas.fa-laptop-code
+							h3 網頁前端
+							p 網頁前端是一門藝術<br>我特別喜歡糾結於畫面呈現上的美感<br>也喜歡用CSS、JQuery做一些小動畫
+							br
+							li(data-bottom-top='transform: translateY(50px)', data--50-bottom='transform: translateY(0px)') HTML/CSS/JavaScript
+							li(data-bottom-top='transform: translateY(60px)', data--50-bottom='transform: translateY(0px)') Javascript/Jquery
+							li(data-bottom-top='transform: translateY(70px)', data--50-bottom='transform: translateY(0px)') Responsive Design
+							li(data-bottom-top='transform: translateY(80px)', data--50-bottom='transform: translateY(0px)') Gulp自動化流程
+							li(data-bottom-top='transform: translateY(90px)', data--50-bottom='transform: translateY(0px)') Git/GitHub 團隊協作
+							li(data-bottom-top='transform: translateY(100px)', data--50-bottom='transform: translateY(0px)') 習慣使用Pug(Jade)、SASS等模板引擎
+							li(data-bottom-top='transform: translateY(110px)', data--50-bottom='transform: translateX(0px)')#second_line.last 信奉 Human Interface Guideline、Pixel Perfect Precision Handbook
+						.col-md-4.col-sm-6
+							i.fab.fa-adobe
+							h3 設計領域
+							p 設計與網頁前端相輔相成<br>有好的平面設計/網頁版面規劃<br>可以給使用者更好的體驗
+							br
+							li(data-bottom-top='transform: translateY(50px)', data--50-bottom='transform: translateY(0px)') 平面設計、LOGO設計、UI/UX設計
+							li(data-bottom-top='transform: translateY(60px)', data--50-bottom='transform: translateY(0px)') 使用者研究法
+							li(data-bottom-top='transform: translateY(70px)', data--50-bottom='transform: translateY(0px)') 使用者中心設計
+							li(data-bottom-top='transform: translateY(80px)', data--50-bottom='transform: translateY(0px)') 原型設計與製作
+							li(data-bottom-top='transform: translateY(90px)', data--50-bottom='transform: translateY(0px)') 互動設計
+							li(data-bottom-top='transform: translateY(100px)', data--50-bottom='transform: translateY(0px)') 使用者測試
+							li(data-bottom-top='transform: translateY(110px)', data--50-bottom='transform: translateY(0px)').last Photoshop/Illustrator/Indesign
+						.col-md-4.col-sm-6#other_skill
+							i.fas.fa-cubes
+							h3 其他項目
+							p 排除網頁前端和平面設計外<br>有些其他的相關能力是會對專業產生影響的<br>例如網頁後端的知識、英文能力等
+							br
+							li(data-bottom-top='transform: translateY(50px)', data--50-bottom='transform: translateY(0px)') 掌握部分後端，能與後端工程師溝通
+							li(data-bottom-top='transform: translateY(60px)', data--50-bottom='transform: translateY(0px)') 具備英文能力，能與外國公司接洽
+							li(data-bottom-top='transform: translateY(70px)', data--50-bottom='transform: translateY(0px)') 有UX相關經驗，能理解使用者需求
+							li(data-bottom-top='transform: translateY(80px)', data--50-bottom='transform: translateY(0px)') 學習能力強，大部分前端、設計是自學而成
+							li(data-bottom-top='transform: translateY(90px)', data--50-bottom='transform: translateY(0px)') 具備問題解決能力，能夠自己尋找解決方法
+							li(data-bottom-top='transform: translateY(100px)', data--50-bottom='transform: translateY(0px)') 有實習經驗，清楚知道團隊該怎麼運作
+							
+			section#section_works
+				.container
+					.rol
+						.col-sm-12
+							h1 作品集
+							hr
+					.works_box_wrapin#toppest_wrap
+						.col-sm-4.col-sm-offset-1.works_box
+							a(href="#")
+								img(src="https://cdn-images-1.medium.com/max/2000/1*7aJPlxn8gwhI7JjcBFr-tQ.jpeg", alt="")
+								.texts
+									i.fas.fa-spinner.fa-spin
+									//- h4.title Title Here
+									p.content Updating
+						.col-sm-4.col-sm-offset-2.works_box
+							a(href="#")
+								img(src="https://cdn-images-1.medium.com/max/2000/1*7aJPlxn8gwhI7JjcBFr-tQ.jpeg", alt="")
+								.texts
+									i.fas.fa-spinner.fa-spin
+									//- h4.title Title Here
+									p.content Updating
+						.container_tag#frontend_tag
+							p 網頁前端
+
+					.works_box_wrapin
+						.col-sm-4.col-sm-offset-1.works_box
+							a(href="#")
+								img(src="https://cdn-images-1.medium.com/max/2000/1*7aJPlxn8gwhI7JjcBFr-tQ.jpeg", alt="")
+								.texts
+									i.fas.fa-spinner.fa-spin
+									//- h4.title Title Here
+									p.content Updating
+						.col-sm-4.col-sm-offset-2.works_box
+							a(href="#")
+								img(src="https://cdn-images-1.medium.com/max/2000/1*7aJPlxn8gwhI7JjcBFr-tQ.jpeg", alt="")
+								.texts
+									i.fas.fa-spinner.fa-spin
+									//- h4.title Title Here
+									p.content Updating
+						.container_tag#design_tag
+							p 平面設計/攝影
+
+								
+			footer.jumbotron#contact_me
+				.container
+					h2 與我聯繫
+					form(action='https://formspree.io/huang798@purdue.edu', method='POST')
+						label 姓名：
+						input(type="text" name="name").form-control(placeholder)#name
+						br
+						label E-mail：
+						input(type="text" name="email").form-control#email
+						br
+						label 訊息：
+						br
+						input(type="textarea" name="message").form-control#textarea
+						hr
+						button(type="submit") 寄出
 
 
 		
@@ -194,5 +196,4 @@ html(lang='en')
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
 		script(src='js/all.js')
-		
-
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
